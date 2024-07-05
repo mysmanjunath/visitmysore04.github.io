@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mysore Tourism</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img src="images/banner.jpg" alt="Mysore Banner">
+        </div>
+        <h1>Mysore Tourism</h1>
+    </header>
+    <nav id="sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#home">Home</a>
+        <div class="dropdown">
+            <a href="#attractions">Attractions</a>
+            <div class="dropdown-content">
+                <a href="#wildlife">Wildlife Tourism</a>
+                <a href="#medical">Medical Tourism</a>
+                <a href="#eco">Eco Tourism</a>
+                <a href="#cultural">Cultural Tourism</a>
+                <a href="#adventure">Adventure Tourism</a>
+                <a href="#wellness">Wellness Tourism</a>
+                <a href="#museums">Museums and Galleries</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#services">Services</a>
+            <div class="dropdown-content">
+                <a href="#homestay">Home Stay</a>
+                <a href="#guides">Guides</a>
+                <a href="#hotels">Hotels</a>
+                <a href="#emergency">Emergency Contact</a>
+            </div>
+        </div>
+        <a href="#map">Map and Guide</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+    <main>
+        <section id="home">
+            <h2>Welcome to Mysore</h2>
+            <img src="images/home.jpg" alt="Mysore Palace">
+            <p>Discover the beauty and culture of Mysore.</p>
+        </section>
+         <section id="wildlife">
+             <h2>Wildlife Tourism</h2>
+            <p>Explore the rich wildlife of Mysore.</p>
+            <img src="images/wildlife.jpg" alt="Wildlife in Mysore">
+				<p> Nagarahole <br>
+				
+				Nagarahole, spread over Mysore and Kodagu is covering an area of 847.981 Sq km. Nagarahole is an important Tiger Reserve in Karnataka and is a major hub of conservation under Project Tiger and Project Elephant.
+				</p>
+				https://www.nagaraholetigerreserve.com/en/
+				<p>
+				Bandipur National Park <br>
+				
+				Bandipur National Park, located on the Mysore-Ooty highway in Karnataka, is a part of the Nilgiri Biosphere Reserve, and shares its borders with Nagarhole National Park in Karnataka, Mudumalai Wildlife Sanctuary in Tamil Nadu, and Wayanad Wildlife Sanctuary in Kerala.
+				</p>
+        </section>
+        <section id="medical">
+            <h2>Medical Tourism</h2>
+            <img src="images/medical.jpg" alt="Medical facilities in Mysore">
+            <p>Discover top medical facilities and services in Mysore.</p>
+        </section>
+        <section id="eco">
+            <h2>Eco Tourism</h2>
+            <img src="images/eco.jpg" alt="Eco tourism in Mysore">
+            <p>Experience the eco-friendly destinations in Mysore.</p>
+        </section>
+        <section id="cultural">
+            <h2>Cultural Tourism</h2>
+            <img src="images/cultural.jpg" alt="Cultural tourism in Mysore">
+            <p>Dive into the cultural heritage of Mysore.</p>
+        </section>
+        <section id="adventure">
+            <h2>Adventure Tourism</h2>
+            <img src="images/adventure.jpg" alt="Adventure tourism in Mysore">
+            <p>Find thrilling adventure activities in Mysore.</p>
+        </section>
+        <section id="wellness">
+            <h2>Wellness Tourism</h2>
+            <img src="images/wellness.jpg" alt="Wellness tourism in Mysore">
+            <p>Relax and rejuvenate with wellness tourism in Mysore.</p>
+            <table>
+                <tr>
+                    <td>Yoga Retreats</td>
+                    <td>Spas and Wellness Centers</td>
+                </tr>
+                <tr>
+                    <td>Ayurvedic Treatments</td>
+                    <td>Meditation Programs</td>
+                </tr>
+            </table>
+			<table>
+                <tr>
+                    <td>Yoga Center </td>
+                    <td>Address</td>
+					<td>Contact Number</td>
+					<td>Website</td>
+                </tr>
+                <tr>
+                    <td>Ashtanga Yoga Research Institute</td>
+                    <td>8th Cross Road, Vani Vilas Mohalla, Mysore<br>
+            Karnataka- 570002</td>
+			<td>Contact: 09880185500</td>
+			<td>Website: <a href="http://kpjayi.org/">http://kpjayi.org/</td>
+                </tr>
+            </table>
+            <p>
+                8th Cross Road, Vani Vilas Mohalla, Mysore<br>
+                Karnataka- 570002<br>
+                Contact: 09880185500<br>
+                Website: <a href="http://kpjayi.org/">http://kpjayi.org/</a>
+            </p>
+        </section>
+        <section id="museums">
+            <h2>Museums and Galleries</h2>
+            <img src="images/museums.jpg" alt="Museums and galleries in Mysore">
+            <p>Explore the rich history and art at the museums and galleries of Mysore.</p>
+        </section>
+        <section id="homestay">
+            <h2>Home Stay</h2>
+            <img src="images/homestay.jpg" alt="Home stay in Mysore">
+            <p>Find the best home stay options in Mysore.</p>
+			<table>
+                <tr>
+                    <td>Home Stay name </td>
+                    <td>Area / Address</td>
+					<td>Contact Number</td>
+					<td>Website</td>
+                </tr>
+                <tr>
+                    <td>Mysore home stay </td>
+                    <td>8th Cross Road, Vani Vilas Mohalla, Mysore<br>
+						Karnataka- 570002</td>
+			<td>Contact: xxxxxxxx</td>
+			<td>Website: <a href="http://homestay.org/">http://homestay.org/</td>
+                </tr>
+            </table>
+        </section>
+        <section id="guides">
+            <h2>Guides</h2>
+            <img src="images/guides.jpg" alt="Guides in Mysore">
+            <p>Hire experienced guides for your tours in Mysore.</p>
+			 <table>
+                <tr>
+                    <td>Guides name </td>
+                    <td>Area / Address</td>
+					<td>Contact Number</td>
+					
+                </tr>
+                <tr>
+                    <td>Ramesh  </td>
+                    <td>Mysore Palace area</td>
+			<td>Contact: xxxxxxxx</td>		
+                </tr>
+				 <tr>
+                    <td>Suresh </td>
+                    <td>KRS </td>
+					<td>Contact xxxxxxxx633</td>					
+                </tr>
+                <tr>
+                    <td>Harish   </td>
+                    <td>Zoo</td>
+			<td>Contact: xxxxxxxx</td>
+			
+                </tr>
+            </table>
+        </section>
+        <section id="hotels">
+            <h2>Hotels</h2>
+            <img src="images/hotels.jpg" alt="Hotels in Mysore">
+            <p>Stay at the best hotels in Mysore.</p>
+        </section>
+        <section id="emergency">
+            <h2>Emergency Contact</h2>
+            <img src="images/emergency.jpg" alt="Emergency contact in Mysore">
+            <p>In case of emergencies, contact the appropriate services.</p>
+			<table>
+			<tr>
+                    <td align="centre" >Toll Free Tourist Helpline for Foreign Tourists visiting India</td>
+                  		
+                </tr><br>
+				<tr>
+				<td>The Ministry of Tourism, Government of India has introduced a 24x7 Toll Free Multi Lingual Tourist Help line to facilitate visits of foreign tourists to India. The service is presently available in 12 International languages, including Hindi & English, on the toll free number 1800111363or on a short code1363.  The service can be availed of by the visiting tourists while travelling in India. </td>
+
+				</tr>
+			
+			</table >
+        </section>
+        <section id="map">
+            <h2>Map and Guide</h2>
+            <div id="map"></div>
+            <p>Find your way around Mysore with our detailed maps and guides.</p>
+        </section>
+        <section id="events">
+            <h2>Events</h2>
+            <video width="320" height="240" controls>
+                <source src="videos/event.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Don't miss out on the exciting events happening in Mysore.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <img src="images/contact.jpg" alt="Contact Mysore Tourism">
+            <p>For any inquiries, call our toll-free number: 1800-123-4567</p>
+        </section>
+    </main>
+    <footer>
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <a href="#home">Home</a>
+            <a href="#attractions">Attractions</a>
+            <a href="#services">Services</a>
+            <a href="#map">Map and Guide</a>
+            <a href="#events">Events</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="downloads">
+            <p>Downloads: <span id="downloadCount">1500</span></p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://www.twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+        </div>
+        <p>&copy; 2024 Mysore Tourism</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
